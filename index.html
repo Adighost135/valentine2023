@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Valentine's Day</title>
+        <meta name="description" content="It's a valentines day">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .center {
+                border: 10px solid;
+                margin: auto;
+                width: 50%;
+                padding: 1px;
+            }
+            .styled {
+                border: 0;
+                line-height: 2.5;
+                padding: 0 20px;
+                font-size: 1rem;
+                text-align: center;
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+                border-radius: 10px;
+                background-color: rgba(220, 0, 0, 1);
+                background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+                box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+            }
+
+            .styled:hover {
+                background-color: rgba(255, 0, 0, 1);
+            }
+
+            .styled:active {
+                box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+            }
+
+        </style>
+
+    </head>
+    <body style="background-color:rgb(240, 140, 140);">
+        
+        <center>
+        <h1 id = "changeline"></h1>
+        <div class="center"><img src = "pic.jpg" width = "450" height = "450" id = "changepic"></div>
+        <table>
+            <tr>
+                <th><button onclick="yesClick()" class = "styled">Yes</button></th>
+                <th><button onclick="noClick()" class = "styled">No</button></th>
+                <th><button onclick="maybeClick()" class = "styled">Maybe</button></th>
+            </tr>
+        </table>
+        </center>
+        <script>
+            var img = document.getElementById("changepic")
+            var line = document.getElementById("changeline")
+            function yesClick(){
+                img.src = "Animal-Love-Cat.jpg";
+                line.innerHTML = "YEHEY VALENTINES DATE <3";
+            }
+
+            function noClick(){
+                img.src = "WHYGOD.png";
+                line.innerHTML = "";
+            }
+            function maybeClick(){
+                img.src = "cry.png";
+                line.innerHTML = "pls reconsider :(";
+            }
+        </script>
+
+        
+    </body>
+</html>
