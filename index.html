@@ -7,12 +7,17 @@
         <meta name="description" content="It's a valentines day">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
         <style>
             .center {
                 border: 10px solid;
                 margin: auto;
                 width: 50%;
                 padding: 1px;
+            }
+            .center1{
+                margin: auto;
+                width: 50%;
             }
             .styled {
                 border: 0;
@@ -35,6 +40,14 @@
             .styled:active {
                 box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
             }
+            .message {
+                font-family: 'Petit Formal Script', cursive;
+                font-size: 36px;
+                font-weight: bold;
+                color: #640d0d;
+                text-shadow: -1px -1px 1px #ae6363, 1px 1px 1px #450000;
+                padding: 50px 0 0 5px;
+            }
 
         </style>
 
@@ -42,7 +55,7 @@
     <body style="background-color:rgb(240, 140, 140);">
         
         <center>
-        <h1 id = "changeline"></h1>
+        <div class="center1"><h1 id = "changeline" class = "message"> </h1></div>
         <div class="center"><img src = "pic.jpg" width = "450" height = "450" id = "changepic"></div>
         <table>
             <tr>
